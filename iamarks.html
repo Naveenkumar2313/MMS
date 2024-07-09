@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="iamarks.css">
+	<script>
+		function sum1(){
+			var x1=parseInt(document.getElementById("c01").value);
+			var y1=parseInt(document.getElementById("c02").value);
+			var result1=x1+y1;
+			if(!isNaN(result1)){
+				document.getElementById("ia1").value = result1;
+			}
+		}
+
+		function sum2(){
+			var x2=parseInt(document.getElementById("co2").value);
+			var y2=parseInt(document.getElementById("c03").value);
+			var result2=x2+y2;
+			if(!isNaN(result2)){
+				document.getElementById("ia2").value = result2;
+			}
+		}
+
+		function sum3(){
+			var x3=parseInt(document.getElementById("c04").value);
+			var y3=parseInt(document.getElementById("c05").value);
+			var result3=x3+y3;
+			if(!isNaN(result3)){
+				document.getElementById("ia3").value = result3;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="bigimage">
+	<div class="overlay">
+	<div class="container">
+		<form method="post" action="" name="contact-form">
+			<h4>Student IA Marks</h4>
+			<input type="text" name="USN" placeholder="USN" required>
+			<input type="text" name="NAME" placeholder="STUDENT NAME" required>
+			<input type="text" id="c01" name="CO1 MARKS" placeholder="CO1" required onkeyup="sum1();"/>
+            <input type="text" id="c02" name="CO2 MARKS" placeholder="CO2" required onkeyup="sum1();"/>
+            <input type="text" id="ia1" name="IA1" placeholder="IA1" readonly style="background-color: rgb(157, 156, 156);">
+			<input type="text" id="co2" name="Co2 MARKS" placeholder="Co2" required onkeyup="sum2();"/>
+            <input type="text" id="c03" name="CO3 MARKS" placeholder="CO3" required onkeyup="sum2();"/>
+			<input type="text" id="ia2" name="IA2" placeholder="IA2" readonly style="background-color: rgb(157, 156, 156);">
+            <input type="text" id="c04" name="CO4 MARKS" placeholder="CO4" required onkeyup="sum3();"/>
+            <input type="text" id="c05" name="CO5 MARKS" placeholder="CO5" required onkeyup="sum3();"/>
+			<input type="text" id="ia3" name="IA3" placeholder="IA3" readonly style="background-color: rgb(157, 156, 156);">
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+    </div>
+	</div>
+
+	<script src="popup1.js"></script>
+</body>
+</html>
