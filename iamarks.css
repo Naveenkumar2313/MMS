@@ -56,3 +56,9 @@ textarea{
    font-size: large;
 }
 
+@media only screen and (max-width: 600px) {
+  .container{
+     width:80%;
+  }
+}
+
