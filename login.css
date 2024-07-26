@@ -50,7 +50,7 @@ input::placeholder{
     border-radius: 25px;
     width: 100px;
     height: auto;
-    text-decoration: solid;
+    font-family:stencil;
     color: #fff;
     text-align: center;
     align-content: center;
