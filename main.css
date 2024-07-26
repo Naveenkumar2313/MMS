@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color:black;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -7,31 +7,39 @@ body{
 
 .division{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     width: 100vw;
+    margin-top: 10px;
 }
 
 button{
-    margin-top: 40px;
     margin: 5px;
+    color: #66fcf1;
+    border: solid 2px #66fcf1;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
-    cursor: pointer;
+    background-color: black;
+    transition: all .5s;
+}
+
+button:hover{
+  cursor: pointer;
+  scale: 1.1;
+  transition: all .5s;
+  background-color: #66fcf1;
+  color: black;
 }
 
 h1{
-    background:linear-gradient(to bottom right, #008cff, #e100ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #66fcf1;
     text-align: center;
     font-family: stencil;
     font-size: xx-large;
 }
 
 h2{
-    background:linear-gradient(to bottom right, #008cff, #e100ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #66fcf1;
     text-align: center;
     font-family: stencil;
     font-size: large;
@@ -74,6 +82,14 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 600px) {
+  h1 {font-size: large}
+  h2 {font-size: small}
+}
+
+@media screen and (max-width: 600px) {
+
+  .division {
+    flex-direction: column;
+  }
 }
