@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color: #aaf0c9;
-    background:linear-gradient(to right,#15b2fb,#7f939c);
+    background-color: #000000;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -22,7 +21,7 @@ img{
     padding:1.5rem;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
+    width: 500px;
     border-radius:25px;
     box-shadow:0 20px 35px rgba(138, 127, 127, 0.9);
     
@@ -50,12 +49,12 @@ input::placeholder{
     border-radius: 25px;
     width: 100px;
     height: auto;
-    font-family:stencil;
     color: #fff;
     text-align: center;
     align-content: center;
     transition: all .5s;
     cursor: pointer;
+    font-family: stencil;
 } 
 
 .btn:hover{
@@ -63,3 +62,20 @@ input::placeholder{
     color: white;
     transition: all .5s;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {font-size: large}
+    img{
+        height: 70px;
+        width: 70px;
+    }
+    .container{
+        width: 200px;
+    }
+    input{
+        font-size: small;
+    }
+    .recover{
+        font-size: x-small;
+    }
+  }
